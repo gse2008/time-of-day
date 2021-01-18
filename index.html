@@ -92,19 +92,20 @@ let myGreeting="";
 let myColor="";
 
 //TEST ONLY - REMOVE THIS
-myHour=15;
+myHour=20;
 
  if(myHour >= 5 && myHour <12){
 	myGreeting="Good Morning!";
  	myColor="yellow";
-}else if (myHour >= 12 && myHour<19){
+}else if(myHour >= 12 && myHour<19){
     myGreeting="Good Afternoon";
  	myColor="orange";
-}else if (myHour >= 19 && myHour<23){
+}else if(myHour >= 19 && myHour<23){
     myGreeting="Good Evening";
  	myColor="purple";
-}else {
+}else{
 	myGreeting="Good Night";
+	myColor="navy"
 }
 
 document.getElementById('mydiv').innerHTML=myGreeting;
