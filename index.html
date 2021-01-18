@@ -91,6 +91,16 @@ let myHour= myDate.getHours();
 let myGreeting="";
 let myColor="";
 
+var d = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
  if(myHour >= 5 && myHour <12){
 	myGreeting="Good Morning!";
  	myColor="yellow";
@@ -105,7 +115,7 @@ let myColor="";
 	myColor="navy"
 }
 
-document.getElementById('mydiv').innerHTML=myGreeting;
+document.getElementById('mydiv').innerHTML=myGreeting + ", today is " + d ;
 document.body.style.backgroundColor=myColor;
 	</script>
 </body>
